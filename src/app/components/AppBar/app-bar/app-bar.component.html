@@ -14,9 +14,16 @@
         <li class="nav-item">
           <a class="nav-link" href="#">ACTIVIDADES</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">RECURSOS</a>
-        </li>        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            RECURSOS
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Mensajes Dominicales</a></li>
+            <li><a class="dropdown-item" routerLink="/resources">Mensajes de viernes</a></li> 
+            <li><a class="dropdown-item" href="#">En vivo</a></li>  
+          </ul>
+        </li>       
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             MINISTERIOS
@@ -25,7 +32,7 @@
             <li><a class="dropdown-item" href="#">Instituto Bíblico</a></li>
             <li><a class="dropdown-item" href="#">Evangelismo</a></li>
             <li><a class="dropdown-item" href="#">Discipulado</a></li>
-            <li><a class="dropdown-item" href="#" routerLink="/youthgroup">Grupo de jóvenes</a></li>
+            <li><a class="dropdown-item" routerLink="/youthgroup">Grupo de jóvenes</a></li>
             <li><a class="dropdown-item" href="#">ICJ Kids</a></li>  
           </ul>
         </li>

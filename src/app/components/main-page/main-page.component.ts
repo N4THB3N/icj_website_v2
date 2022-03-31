@@ -14,10 +14,10 @@ export class MainPageComponent implements OnInit {
   images = [700, 533, 807, 124].map((n) => `https://picsum.photos/id/${n}/1850/500`);  
 
   // images = [
-  //   'assets/landscape.jpg',
-  //   'assets/paisaje.jpg',
-  //   'assets/mountains.jpg',
-  //   'assets/jesus.jpg'
+  //   'assets/allen.jpg',
+  //   'assets/dinner.jpg',
+  //   'assets/ayuno.jpg',
+  //   'assets/hermeneutics.jpg'
   // ]
 
   constructor(config: NgbCarouselConfig) {
