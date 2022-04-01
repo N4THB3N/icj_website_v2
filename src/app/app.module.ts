@@ -9,6 +9,8 @@ import { YouthGroupComponent } from './components/youth-group/youth-group.compon
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './components/footer/footer.component';
 import { ResourcesComponent } from './components/resources/resources.component';
+import { ActivitiesComponent } from './components/activities/activities.component';
+import { SermonsComponent } from './components/sermons/sermons.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { ResourcesComponent } from './components/resources/resources.component';
     MainPageComponent,
     YouthGroupComponent,
     FooterComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    ActivitiesComponent,
+    SermonsComponent
   ],
   imports: [
     NgbModule,
