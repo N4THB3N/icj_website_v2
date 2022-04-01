@@ -11,6 +11,11 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ResourcesComponent } from './components/resources/resources.component';
 import { ActivitiesComponent } from './components/activities/activities.component';
 import { SermonsComponent } from './components/sermons/sermons.component';
+import { LiveComponent } from './components/live/live.component';
+import { IbjComponent } from './components/ibj/ibj.component';
+import { IcjkidsComponent } from './components/icjkids/icjkids.component';
+import { DiscipleshipComponent } from './components/discipleship/discipleship.component';
+import { EvangelismComponent } from './components/evangelism/evangelism.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +26,12 @@ import { SermonsComponent } from './components/sermons/sermons.component';
     FooterComponent,
     ResourcesComponent,
     ActivitiesComponent,
-    SermonsComponent
+    SermonsComponent,
+    LiveComponent,
+    IbjComponent,
+    IcjkidsComponent,
+    DiscipleshipComponent,
+    EvangelismComponent
   ],
   imports: [
     NgbModule,
