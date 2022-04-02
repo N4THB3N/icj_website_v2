@@ -30,10 +30,10 @@ export class ContactComponent implements OnInit {
         { 'headers': headers }).subscribe(
           response => {
             console.log(response);
+            this.showToasterSuccess();
           }
         );
     }
-    this.showToasterSuccess();
   }  
 
 
