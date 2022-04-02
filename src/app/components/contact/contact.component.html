@@ -1,0 +1,46 @@
+<div id="confirm-message" ></div>
+
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>CONTACTO</h1>
+    </div>
+        
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=11%20Calle%2014-85%20Zona%2011,%20Carabanchel+(ICJ)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/marine-gps/">navigation gps</a></iframe></div>
+        </div>    
+        <div class="col-md-6">
+            <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="exampleFormControlInput1">Nombre</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name="name" ngModel required #name="ngModel">
+                    </div>        
+                    <div class="col-md-6">
+                      <label for="exampleFormControlInput1">Email address</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" email name="email" ngModel required #email="ngModel">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="exampleFormControlTextarea1">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" ngModel required #messages="ngModel" name="messages"></textarea>      
+                    </div>
+                </div>  
+                <div class="row">
+                    <div class="col-md-2" style="margin-top: 10px;">
+                        <button type="submit" class="btn btn-primary" value="Send">Enviar</button>            
+                    </div>
+                </div>
+        
+            </form>
+        </div>
+    </div>
+
+</div>
+<div class="container">
+
+</div>
+

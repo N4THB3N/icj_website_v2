@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule, HttpHeaders } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppBarComponent } from './components/AppBar/app-bar/app-bar.component';
@@ -16,6 +17,8 @@ import { IbjComponent } from './components/ibj/ibj.component';
 import { IcjkidsComponent } from './components/icjkids/icjkids.component';
 import { DiscipleshipComponent } from './components/discipleship/discipleship.component';
 import { EvangelismComponent } from './components/evangelism/evangelism.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule }   from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +34,17 @@ import { EvangelismComponent } from './components/evangelism/evangelism.componen
     IbjComponent,
     IcjkidsComponent,
     DiscipleshipComponent,
-    EvangelismComponent
+    EvangelismComponent,
+    ContactComponent,
   ],
-  imports: [
+  imports: [  
     NgbModule,
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
+    FormsModule
+
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

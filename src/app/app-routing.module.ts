@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { ActivitiesComponent } from './components/activities/activities.component';
+import { ContactComponent } from './components/contact/contact.component';
 import { DiscipleshipComponent } from './components/discipleship/discipleship.component';
 import { EvangelismComponent } from './components/evangelism/evangelism.component';
 import { IbjComponent } from './components/ibj/ibj.component';
@@ -22,7 +23,8 @@ const routes: Routes = [
     {path: 'evangelism', component: EvangelismComponent},
     {path: 'discipleship', component: DiscipleshipComponent},
     {path: 'icjkids', component: IcjkidsComponent},
-    {path: 'ibj', component: IbjComponent}
+    {path: 'ibj', component: IbjComponent},
+    {path: 'contact', component: ContactComponent}
   ]
   
   @NgModule({
