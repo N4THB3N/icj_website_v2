@@ -1,6 +1,8 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { NotificationService } from 'src/app/notification.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -9,10 +11,15 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private notifyService: NotificationService) { }
 
   ngOnInit(): void {  
   }
+
+  showToasterSuccess(){
+    this.notifyService.showSuccess("Mensaje enviado exitosamente", "Email enviado")
+  }
+
 
   onSubmit(contactForm: NgForm) {
     if (contactForm.valid) {
@@ -26,6 +33,7 @@ export class ContactComponent implements OnInit {
           }
         );
     }
+    this.showToasterSuccess();
   }  
 
 
